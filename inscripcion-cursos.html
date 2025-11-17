@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscripcion a los cursos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header-inscripcion">
+        <img class="img-header-inscripcion" src="./img/isologo-taller.png" alt="Isologo-taller">
+        <h1 class="h1-header-inscripcion">el taller</h1>
+        <nav class="nav-header-inscripcion">
+            <ul class="ul-nav-header-inscripcion">
+                <li><a href="que-es-la-ceramica.html">CERÁMICA</a></li>
+                <li><a href="cursos.html">CURSOS</a></li>
+                <li class="activo"><a href="inscripcion-cursos.html">INSCRIPCIÓN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="inscripcion">Inscripción a los cursos</h1>
+        <form action="submit">
+            <p>
+                <small>Los campos marcados con * son obligatorios</small>
+            </p>
+            <fieldset>
+                <legend>Detalles de la inscripción</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+             <label for="telefono">Teléfono :</label>
+            <input type="text" id="telefono" name="telefono" required>
+
+               <label for="fechaNacimiento">Fecha de Nacimiento :</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <label for="curso">Curso:</label>
+            <select id="curso" name="curso" required>
+                <option value="torno">Torno</option>
+                <option value="ceramica">Cerámica</option>
+                <option value="modelado">Modelado</option>
+                <option value="esmaltes">Esmaltes</option>
+                <option value="joyeriaCeramica">Joyería Cerámica</option>
+            </select>
+            </fieldset>
+            <fieldset>
+                <legend>Otras informaciones</legend>
+                <fieldset>
+                    <legend>¿Has hecho otros cursos con nosotros *?</legend>
+                    <input type="radio" id="si" name="otrosCursos" value="si" required>
+                    <label for="si">Sí</label>
+                    <input type="radio" id="no" name="otrosCursos" value="no" required>
+                    <label for="no">No</label>
+                </fieldset>
+                <label for="comentarios">¿Quieres preguntar algo?</label>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Elije un método de pago</legend>
+                <input type="checkbox" id="transferencia" name="metodoPago" value="transferencia">
+                <label for="transferencia">Transferencia bancaria</label><br>
+                <input type="checkbox" id="tarjeta" name="metodoPago" value="tarjeta">
+                <label for="tarjeta">Tarjeta de crédito / débito</label><br>
+                <input type="checkbox" id="efectivo" name="metodoPago" value="efectivo">
+                <label for="efectivo">Efectivo</label><br>
+            </fieldset>
+            <p>
+                <small>
+                    INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>EL TALLER</strong>. <strong>Finalidades</strong>: recogida de datos para la inscripción como socio del interesado. <strong>Legitimación</strong>: Consentimiento del interesado. <strong>Destinatarios</strong>: No están previstas cesiones de datos a terceros, excepto obligación legal. <strong>Derechos</strong>: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a info@eltaller.es. <strong>Información Adicional</strong>: Puede ampliar la información en el enlace de <a href="#">Aviso Legal</a> y <a href="#">Política de privacidad</a>
+                </small>
+            </p>
+            <input type="radio">
+            <label for="acepto">He leído y acepto la <a href="#">política de privacidad</a> *</label>
+
+            <input type="submit" value="INSCRÍBEME">
+        </form>
+    </main>
+    <footer class="footer-que-es-la-ceramica">
+    <div class="div-footer-que-es-la-ceramica">
+        <nav>
+            <ul class="lista-menu-footer">
+                <li><a href="#">Aviso legal</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Política de cookies</a></li>
+            </ul>
+        </nav>
+        <p><time datetime="2023">2023</time> &copy; Roberto Amorós Linares</p>
+    </div>
+</footer>
+    
+</body>
+</html>
