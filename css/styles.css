@@ -239,7 +239,6 @@ body {
   margin-bottom: 0;
 }
 /*Fin del footer principal*/
-
 /*Qué es la cerámica*/
 .main-ceramica {
   font-size: 0.8rem;
@@ -319,3 +318,115 @@ figcaption {
   
 }
 
+/*Cursos*/
+.h1-cursos {
+  text-align: center;
+}
+.fecha-cursos {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.main-cursos {
+  font-size: 0.8rem;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  text-align: justify;
+}
+
+.figure-cursos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-cursos {
+  width: 50%;
+  height: auto;
+}
+
+.figure-cursos figcaption {
+  width: 50%;
+  text-align: left;
+  margin-top: 0.3rem;
+  font-size: 0.6rem;
+}
+
+.figure-cursos figcaption a {
+  color: #954e4e;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
+.p-descripcion-cursos {
+  width: 50%;
+  margin: 1.5rem auto;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+/*Tabla de cursos*/
+.table-cursos {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  color: #504f4f;
+  text-align: left;
+  margin: 2rem 0;
+}
+
+.table-cursos {
+  border-top: 2px solid #cfcfcf;
+}
+
+.table-cursos caption {
+  text-align: center;
+  padding: 0.8rem 0 0.4rem 0;
+}
+.table-cursos caption {
+  font-size: 1rem;
+  border-top: 2px solid #cfcfcf;
+  padding-top: 0.6rem;
+  text-align: center;
+}
+
+.thead-table-cursos {
+  border-top: 2px solid #cfcfcf;
+}
+
+.thead-table-cursos th {
+  font-weight: normal;
+  padding: 0.6rem 0.4rem;
+  border: none;
+}
+
+.table-cursos tbody td:first-child {
+  color: black;
+  font-weight: bold; /*negrita*/
+}
+
+.table-cursos td {
+  padding: 0.6rem 0.4rem;
+  border: none;
+}
+
+.table-cursos tbody tr:nth-child(odd) {
+  background-color: #6BDEC8;
+}
+
+.table-cursos tbody tr:last-child td {
+  border-bottom: none !important;
+}
+
+.table-cursos tfoot td {
+  padding-top: 0.8rem;
+  font-size: 0.6rem;
+  color: #333;
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+/*Fin Cursos*/
+/*Inicio inscripcion cursos*/
