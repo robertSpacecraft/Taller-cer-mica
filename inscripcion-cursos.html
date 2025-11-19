@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>inscripcion a los cursos</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header class="header-principal">
         <img class="img-header-principal" src="./img/isologo-taller.png" alt="Isologo-taller">
-        <h2 class="h2-header-principal">el taller</h2>
+        <a href="index.html">
+            <h2 class="h2-header-principal">el taller</h2>
+        </a>
         <nav class="nav-header-principal">
             <ul class="ul-nav-header-principal">
                 <li><a href="que-es-la-ceramica.html">CERÁMICA</a></li>
@@ -18,82 +22,89 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main-inscripcion">
         <h1 class="inscripcion">Inscripción a los cursos</h1>
-        <form action="submit">
-            <p>
+        <form class="form-inscripcion" action="submit">
+            <p class="campos-obligatorios">
                 <small>Los campos marcados con * son obligatorios</small>
             </p>
-            <fieldset>
-                <legend>Detalles de la inscripción</legend>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+            <fieldset class="fieldset-inscripcion">
+                <legend class="legend-inscripcion">Detalles de la inscripción</legend>
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" required>
 
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
+                <label for="apellido">Apellido *</label>
+                <input type="text" id="apellido" name="apellido" required>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Correo electrónico *</label>
+                <input type="email" id="email" name="email" required>
 
-             <label for="telefono">Teléfono :</label>
-            <input type="text" id="telefono" name="telefono" required>
+                <label for="telefono">Teléfono :</label>
+                <input type="text" id="telefono" name="telefono" required>
 
-               <label for="fechaNacimiento">Fecha de Nacimiento :</label>
-            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+                <label for="fechaNacimiento">Fecha de Nacimiento *</label>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
 
-            <label for="curso">Curso:</label>
-            <select id="curso" name="curso" required>
-                <option value="torno">Torno</option>
-                <option value="ceramica">Cerámica</option>
-                <option value="modelado">Modelado</option>
-                <option value="esmaltes">Esmaltes</option>
-                <option value="joyeriaCeramica">Joyería Cerámica</option>
-            </select>
+                <label for="curso">Curso *</label>
+                <select id="curso" name="curso" required>
+                    <option value="torno">Torno</option>
+                    <option value="ceramica">Cerámica</option>
+                    <option value="modelado">Modelado</option>
+                    <option value="esmaltes">Esmaltes</option>
+                    <option value="joyeriaCeramica">Joyería Cerámica</option>
+                </select>
             </fieldset>
-            <fieldset>
-                <legend>Otras informaciones</legend>
-                <fieldset>
-                    <legend>¿Has hecho otros cursos con nosotros *?</legend>
+            <fieldset class="fieldset-otras">
+                <legend class="legend-otras">Otras informaciones</legend>
+                <fieldset class="fieldset-otros-cursos">
+                    <legend class="legend-otros-cursos">¿Has hecho otros cursos con nosotros? *</legend>
                     <input type="radio" id="si" name="otrosCursos" value="si" required>
                     <label for="si">Sí</label>
                     <input type="radio" id="no" name="otrosCursos" value="no" required>
                     <label for="no">No</label>
                 </fieldset>
-                <label for="comentarios">¿Quieres preguntar algo?</label>
+                <label for="comentarios">¿Quieres preguntar algo? *</label>
                 <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
             </fieldset>
-            <fieldset>
-                <legend>Elije un método de pago</legend>
-                <input type="checkbox" id="transferencia" name="metodoPago" value="transferencia">
+            <fieldset class="fieldset-elige">
+                <legend class="legend-elige">Elige un método de pago</legend>
+                <input type="radio" id="transferencia" name="metodoPago" value="transferencia">
                 <label for="transferencia">Transferencia bancaria</label><br>
-                <input type="checkbox" id="tarjeta" name="metodoPago" value="tarjeta">
+                <input type="radio" id="tarjeta" name="metodoPago" value="tarjeta">
                 <label for="tarjeta">Tarjeta de crédito / débito</label><br>
-                <input type="checkbox" id="efectivo" name="metodoPago" value="efectivo">
+                <input type="radio" id="efectivo" name="metodoPago" value="efectivo">
                 <label for="efectivo">Efectivo</label><br>
             </fieldset>
             <p>
                 <small>
-                    INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>EL TALLER</strong>. <strong>Finalidades</strong>: recogida de datos para la inscripción como socio del interesado. <strong>Legitimación</strong>: Consentimiento del interesado. <strong>Destinatarios</strong>: No están previstas cesiones de datos a terceros, excepto obligación legal. <strong>Derechos</strong>: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a info@eltaller.es. <strong>Información Adicional</strong>: Puede ampliar la información en el enlace de <a href="#">Aviso Legal</a> y <a href="#">Política de privacidad</a>
+                    INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>EL TALLER</strong>. <strong>Finalidades</strong>:
+                    recogida de datos para la inscripción como socio del interesado. <strong>Legitimación</strong>:
+                    Consentimiento del interesado. <strong>Destinatarios</strong>: No están previstas cesiones de datos
+                    a terceros, excepto obligación legal. <strong>Derechos</strong>: Puede retirar su consentimiento en
+                    cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a
+                    info@eltaller.es. <strong>Información Adicional</strong>: Puede ampliar la información en el enlace
+                    de <a href="#">Aviso Legal</a> y <a href="#">Política de privacidad</a>
                 </small>
             </p>
-            <input type="radio">
+            <input type="checkbox" id="acepto" name="acepto" required>
             <label for="acepto">He leído y acepto la <a href="#">política de privacidad</a> *</label>
 
             <input type="submit" value="INSCRÍBEME">
         </form>
     </main>
-<footer class="footer-principal">
-    <div class="div-footer-principal">
-        <nav>
-            <ul class="lista-menu-footer">
-                <li><a href="#">Aviso legal</a></li>
-                <li><a href="#">Política de privacidad</a></li>
-                <li><a href="#">Política de cookies</a></li>
-            </ul>
-        </nav>
-        <p><time datetime="2023">2023</time> &copy; Roberto Amorós Linares</p>
-    </div>
-</footer>
-    
+    <footer class="footer-principal">
+        <div class="div-footer-principal">
+            <nav>
+                <ul class="lista-menu-footer">
+                    <li><a href="#">Aviso legal</a></li>
+                    <li><a href="#">Política de privacidad</a></li>
+                    <li><a href="#">Política de cookies</a></li>
+                </ul>
+            </nav>
+            <p><time datetime="2023">2023</time> &copy; Roberto Amorós Linares</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
